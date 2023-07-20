@@ -50,7 +50,7 @@ char *my_strcpy(char *to, char *from);
 int check_build_in_func(char *final_string, char *envp[]);
 char *my_strcat(const char *str1, const char *str2);
 int my_env(void);
-void my_atoi(char *my_string);
+int my_atoi(char *my_string);
 void my_exit(char **argument);
 void handle_non_terminal_input(void);
 
