@@ -37,4 +37,4 @@ void wait_for_children(int num_commands)
 	{
 		wait(NULL);
 	}
-};
+}
