@@ -6,7 +6,7 @@
  * @env: parent array environmental variable
  * Return: void
  */
-pid_t fork_execute_functon(char **array_string, char *env[])
+pid_t fork_execute_function(char **array_string, char *env[])
 {
 pid_t my_child_pid;
 int waiting_status = 0;

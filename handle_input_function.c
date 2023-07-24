@@ -1,4 +1,5 @@
-#include "shell.c"
+#include "shell.h"
+
 /**
  * handle_input - ask if the input has | it calls the func to handle it.
  * if it doesn't have it call hndle command  function
