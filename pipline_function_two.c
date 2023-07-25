@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * create_pipes - pipes creatorf function.
  * @pipefd: container to store the fd of |
@@ -27,12 +28,11 @@ int create_pipes(int pipefd[][2], int num_pipes)
  */
 void free_commands(char *commands[], int num_commands)
 {
-	int i;
-
-	for (i = 0; i < num_commands; i++)
-	{
-			free(commands[i]);
-	}
+int i;
+for (i = 0; i < num_commands; i++)
+{
+free(commands[i]);
+}
 }
 /**
  * my_pipline_handler - pipline cmd handler.
@@ -42,5 +42,5 @@ void free_commands(char *commands[], int num_commands)
  */
 int my_pipline_handler(char *pipeline, char *envp[])
 {
-	return (run_shell(pipeline , envp));
+	return (run_shell(pipeline, envp));
 }
